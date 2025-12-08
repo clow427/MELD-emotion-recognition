@@ -3,11 +3,14 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# MELD 
 MELD.raw/dev_splits_complete
 MELD.raw/dev_splits_complete 2
 MELD.raw/output_repeated_splits_test
+MELD.raw/train_splits
 MELD.raw/train
 MELD.raw/text_emotion.pkl
+MELD_spectrograms/*
 
 # C extensions
 *.so
