@@ -12,6 +12,10 @@ MELD.raw/train
 MELD.raw/text_emotion.pkl
 MELD_spectrograms/*
 
+# Models
+best_cnn_model.keras
+best_lstm_model.keras
+
 # C extensions
 *.so
 
