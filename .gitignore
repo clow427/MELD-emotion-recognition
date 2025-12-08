@@ -3,6 +3,11 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+dev_splits_complete
+dev_splits_complete 2
+output_repeated_splits_test
+train
+
 # C extensions
 *.so
 
