@@ -163,3 +163,4 @@ MELD-emotion-recognition/
 - **MELD Dataset**: Poria et al. "MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations"
 - **TensorFlow/Keras**: For the deep learning framework
 - **Librosa**: For audio processing capabilities
+- **AI Assistance**: Used for code structuring, debugging, documentation refinement, model refinement, code drafting, and research idea drafting during development
