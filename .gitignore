@@ -22,6 +22,8 @@ best_lstm_model.keras
 
 *.keras
 
+.DS_Store
+
 # C extensions
 *.so
 
