@@ -10,6 +10,7 @@ MELD.raw/output_repeated_splits_test
 MELD.raw/train_splits
 MELD.raw/train
 MELD.raw/text_emotion.pkl
+MELD.raw/audio_emotion.pkl
 
 MELD_spectrograms/X_audio_test.npy
 MELD_spectrograms/X_audio_train.npy
