@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.8+-orange.svg)](https://www.tensorflow.org/)
 
-A comprehensive multimodal emotion recognition system using the MELD (Multimodal EmotionLines Dataset). This project implements multiple deep learning approaches to classify emotions from conversational dialogue, combining text and audio modalities for improved performance.
+A comprehensive multimodal emotion recognition system using the MELD (Multimodal EmotionLines Dataset). This project implements multiple deep learning approaches to classify emotions from conversational dialogue, combining text and audio modalities for improved performance. The main code can be found in `final_code.ipynb`.
 
 ## Overview
 
@@ -99,27 +99,10 @@ pip install librosa tqdm
 
 ### 4. 2D CNN Model (Spectrogram-Based)
 
+- **NOT IMPLEMENTED**
 - **Architecture**: 2D Convolutional Neural Network
 - **Input**: Mel spectrograms (128×128×1)
 - **Features**: Raw audio processing pipeline
-
-## Results
-
-### Model Performance Comparison
-
-| Model                 | Test Accuracy | Key Features     |
-| --------------------- | ------------- | ---------------- |
-| LSTM (Text)           | ~65%          | Strong baseline  |
-| 1D CNN (Audio)        | ~58%          | Audio modality   |
-| Fusion (Text+Audio)   | ~68%          | Best performance |
-| 2D CNN (Spectrograms) | ~42%          | Experimental     |
-
-### Key Insights
-
-- **Fusion improves performance** by 3-10% over unimodal approaches
-- **Text modality dominates** but audio provides complementary information
-- **Class imbalance affects** minority emotions (disgust, fear)
-- **Spectrogram approach needs** more data/tuning for competitive performance
 
 ## Usage
 
@@ -175,52 +158,8 @@ MELD-emotion-recognition/
 └── README.md
 ```
 
-## Technical Details
-
-### Audio Processing Pipeline
-
-1. **Raw Audio** → **Mel Spectrograms** (128×128)
-2. **Log Scaling** + **Min-Max Normalization**
-3. **Padding/Truncation** for fixed dimensions
-4. **2D CNN Feature Extraction**
-
-### Text Processing Pipeline
-
-1. **Raw Text** → **Contextual Embeddings** (pre-computed)
-2. **LSTM Sequence Modeling**
-3. **Attention Mechanism** for utterance-level features
-
-### Fusion Strategy
-
-- **Late Fusion**: Separate feature extraction → Concatenation → Classification
-- **Regularization**: Dropout, batch normalization, L2 regularization
-- **Optimization**: Adam optimizer with learning rate scheduling
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-### Development Guidelines
-
-1. Follow PEP 8 style guidelines
-2. Add docstrings to new functions
-3. Test on validation set before submitting
-4. Update documentation for new features
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - **MELD Dataset**: Poria et al. "MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations"
 - **TensorFlow/Keras**: For the deep learning framework
 - **Librosa**: For audio processing capabilities
-
-## Contact
-
-For questions or issues, please open a GitHub issue or contact the repository owner.
-
----
-
-**Note**: This is a research project for educational purposes. Model performance may vary based on dataset quality and preprocessing choices.
